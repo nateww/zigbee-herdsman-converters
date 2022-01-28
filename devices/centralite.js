@@ -200,7 +200,7 @@ module.exports = [
         exposes: [e.battery(),
             exposes.binary('temperature_setpoint_hold', ea.ALL, true, false)
                 .withDescription('Prevent changes. `false` = run normally. `true` = prevent from making changes.'),
-            exposes.climate().withSetpoint('occupied_heating_setpoint', 10, 30, 1).withLocalTemperature()
+            exposes.climate().withSetpoint('occupied_heating_setpoint', 6.66, 30, 1).withLocalTemperature()
                 .withSystemMode(['off', 'heat', 'cool', 'emergency_heating'])
                 .withRunningState(['idle', 'heat', 'cool', 'fan_only']).withFanMode(['auto', 'on'])
                 .withSetpoint('occupied_cooling_setpoint', 10, 30, 1)
